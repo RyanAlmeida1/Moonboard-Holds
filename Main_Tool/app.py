@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-df17 = pd.read_csv("Moonboard-Holds-main\Main_Tool\Data\Analysis_Data2017")
-df19 = pd.read_csv("Moonboard-Holds-main\Main_Tool\Data\Analysis_Data2019")
-df16 = pd.read_csv("Moonboard-Holds-main\Main_Tool\Data\Analysis_Data2016")
+df17 = pd.read_csv("Moonboard-Holds-main/Main_Tool/Data/Analysis_Data2017")
+df19 = pd.read_csv("Moonboard-Holds-main/Main_Tool/Data/Analysis_Data2019")
+df16 = pd.read_csv("Moonboard-Holds-main/Main_Tool/Data/Analysis_Data2016")
 
 user_set = st.selectbox("Enter Moonboard Set", ['2016','2017','2019'])
 user_hold = st.text_input("Enter Hold (Ex. 'J12'): ") 
@@ -14,13 +14,13 @@ year = ""
 
 if user_set == "2017":
     year = df17
-    st.image("Moonboard-Holds-main\Main_Tool\Set_Images\mbsetup-mbm2017.jpg", width=500)
+    st.image("Moonboard-Holds-main/Main_Tool/Set_Images/mbsetup-mbm2017.jpg", width=500)
 elif user_set == "2019":
     year = df19
-    st.image("Moonboard-Holds-main\Main_Tool\Set_Images\mbsetup-mbm2019.jpg", width=500)
+    st.image("Moonboard-Holds-main/Main_Tool/Set_Images/mbsetup-mbm2019.jpg", width=500)
 else:
     year = df16
-    st.image("Moonboard-Holds-main\Main_Tool\Set_Images\mbsetup-2016.jpg", width=500)
+    st.image("Moonboard-Holds-main/Main_Tool/Set_Images/mbsetup-2016.jpg", width=500)
 
 letters = ["A","B","C","D","E","F","G","H","I","J","K"]
 hold_types = []
