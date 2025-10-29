@@ -1,28 +1,4 @@
-#Plausible
 import streamlit as st
-from urllib.parse import quote_plus
-
-APP_DOMAIN = "moonboard-holds-vwbjgpy3ocg24djaqtzmkw.streamlit.app"  # exact host
-
-def plausible_pageview(path="/"):
-    src = ("https://plausible.io/api/event"
-           f"?no-js=1&domain={quote_plus(APP_DOMAIN)}"
-           f"&name=pageview&url=https://{quote_plus(APP_DOMAIN)}{quote_plus(path)}")
-    st.components.v1.html(f'<img src="{src}" style="display:none;" />', height=0)
-
-def plausible_event(name, **props):
-    base = (f"https://plausible.io/api/event?no-js=1"
-            f"&domain={quote_plus(APP_DOMAIN)}&name={quote_plus(name)}")
-    for k, v in props.items():
-        base += f"&props[{quote_plus(str(k))}]={quote_plus(str(v))}"
-    st.components.v1.html(f'<img src="{base}" style="display:none;" />', height=0)
-
-# fire ONE pageview per user session (avoid Streamlit rerun duplicates)
-if "pv_fired" not in st.session_state:
-    plausible_pageview("/")
-    st.session_state.pv_fired = True
-#Plausible
-
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
