@@ -14,13 +14,13 @@ year = ""
 
 if user_set == "2017":
     year = df17
-    st.image("ryanalmeida1/moonboard-holds/main/Main_Tool/Set_Images/mbsetup-mbm2017.jpg", width=500)
+    st.image("Main_Tool/Set_Images/mbsetup-2016.jpg", width=500)
 elif user_set == "2019":
     year = df19
-    st.image("ryanalmeida1/moonboard-holds/main/Main_Tool/Main_Tool/Set_Images/mbsetup-mbm2019.jpg", width=500)
+    st.image("Main_Tool/Set_Images/mbsetup-mbm2019.jpg", width=500)
 else:
     year = df16
-    st.image("ryanalmeida1/moonboard-holds/main/Main_Tool/Main_Tool/Set_Images/mbsetup-2016.jpg", width=500)
+    st.image("Main_Tool/Set_Images/mbsetup-2016.jpg", width=500)
 
 letters = ["A","B","C","D","E","F","G","H","I","J","K"]
 hold_types = []
