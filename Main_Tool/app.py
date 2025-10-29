@@ -6,8 +6,6 @@ import streamlit_analytics
 
 streamlit_analytics.start_tracking()
 
-st.html('<script defer data-domain="https://moonboard-holds-vwbjgpy3ocg24djaqtzmkw.streamlit.app/" src="https://plausible.io/js/script.js"></script>')
-
 df17 = pd.read_csv("Main_Tool/Data/Analysis_Data2017")
 df19 = pd.read_csv("Main_Tool/Data/Analysis_Data2019")
 df16 = pd.read_csv("Main_Tool/Data/Analysis_Data2016")
