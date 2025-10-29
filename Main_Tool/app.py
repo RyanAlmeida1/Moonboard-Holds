@@ -6,7 +6,7 @@ import streamlit as st
 
 st.components.v1.html("""
 <script defer data-domain="moonboard-holds-vwbjgpy3ocg24djaqtzmkw.streamlit.app"
-        src="https://plausible.io/js/script.js"></script>
+        src="https://plausible.io/js/plausible.js"></script>
 """, height=0)
 
 
