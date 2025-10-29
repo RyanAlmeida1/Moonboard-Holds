@@ -6,7 +6,8 @@ import streamlit as st
 
 st.components.v1.html("""
 <script defer data-domain="moonboard-holds-vwbjgpy3ocg24djaqtzmkw.streamlit.app"
-        src="https://plausible.io/js/plausible.js"></script>
+        src="https://plausible.io/js/plausible.js"
+        onload="console.log('Plausible loaded')"></script>
 """, height=0)
 
 
@@ -37,7 +38,7 @@ for i in range(11):
         
 #For 2016
 if user_set == "2016":
-    remove = ["A1", "A2", "A3", "A4", "B6", "A7", "A8", "A17", "B1", "B2", "B5", "B14", "B17", "C1", "C2", "C3", "C4", "C17", "D1", "D2", "D4", "E1", "E2", "E3", "E4", "E5", "E17", "F1", "F2", "F3", "F4", "F17", "F18", "G1", "G3", "G5", "H1", "H2", "H3", "H4", "H6", "H17", "I1", "I2", "I3", "I17", "J1", "J3", "J4", "J15", "J17", "J18", "K1", "K2", "K3", "K4", "K15", "K17"]
+    remove = ["A1", "A2", "A3", "A4", "B6", "A7", "A8", "A17", "B1", "B2", "B5", "B14", "B17", "C1", "C2", "C3", "C4", "C17", "D1", "D2", "D4", "E1", "E2", "E3", "E4", "E5", "E17", "F1", "F2", "F3", "[...]
     for hold in remove:
         hold_types.remove(hold)
 
