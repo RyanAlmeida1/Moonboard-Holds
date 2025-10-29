@@ -1,20 +1,3 @@
-import streamlit as st, uuid
-from posthog import Posthog
-
-POSTHOG_KEY  = "phc_GXAVENaaBC9LlqooUPloG82YqiDQX3vkOXONZaDW3dM"
-POSTHOG_HOST = "https://us.posthog.com"
-
-if "anon_id" not in st.session_state:
-    st.session_state.anon_id = str(uuid.uuid4())
-
-ph = Posthog(project_api_key=POSTHOG_KEY, host=POSTHOG_HOST)
-
-# once per session
-if "ph_pageview" not in st.session_state:
-    ph.capture(distinct_id=st.session_state.anon_id, event="page_view")
-    st.session_state.ph_pageview = True
-
-
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
