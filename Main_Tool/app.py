@@ -1,15 +1,15 @@
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
+#Plausible
 import streamlit as st
-
 
 st.components.v1.html("""
 <script defer data-domain="moonboard-holds-vwbjgpy3ocg24djaqtzmkw.streamlit.app"
-        src="https://plausible.io/js/plausible.js"
-        onload="console.log('Plausible loaded')"></script>
+        src="https://plausible.io/js/script.js"></script>
 """, height=0)
+#Plausible
 
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
 df17 = pd.read_csv("Main_Tool/Data/Analysis_Data2017")
 df19 = pd.read_csv("Main_Tool/Data/Analysis_Data2019")
