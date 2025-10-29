@@ -2,14 +2,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
+import streamlit as st
 
-st.html("<head>
-    <script async src="https://plausible.io/js/pa-9ci_Y3-t4d_t4TCHceA_H.js"></script>
-    <script>
-        window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-        plausible.init()
-    </script>
-<head/>")
+
+st.components.v1.html("""
+<script defer data-domain="https://moonboard-holds-vwbjgpy3ocg24djaqtzmkw.streamlit.app/"
+        src="https://plausible.io/js/script.js"></script>
+""", height=0)
+
 
 df17 = pd.read_csv("Main_Tool/Data/Analysis_Data2017")
 df19 = pd.read_csv("Main_Tool/Data/Analysis_Data2019")
