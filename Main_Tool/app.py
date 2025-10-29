@@ -3,6 +3,17 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+st.components.v1.html("""
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-559SFW26XH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-559SFW26XH');
+</script>
+""", height=0)
+
 df17 = pd.read_csv("Main_Tool/Data/Analysis_Data2017")
 df19 = pd.read_csv("Main_Tool/Data/Analysis_Data2019")
 df16 = pd.read_csv("Main_Tool/Data/Analysis_Data2016")
