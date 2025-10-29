@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-df17 = pd.read_csv("ryanalmeida1/moonboard-holds/main/Main_Tool/Data/Analysis_Data2017")
+df17 = pd.read_csv("Data/Analysis_Data2017")
 df19 = pd.read_csv("ryanalmeida1/moonboard-holds/main/Main_Tool/Data/Analysis_Data2019")
 df16 = pd.read_csv("ryanalmeida1/moonboard-holds/main/Main_Tool/Data/Analysis_Data2016")
 
