@@ -1,23 +1,10 @@
-<!-- Default Statcounter code for Moon Analysis
-https://moonboard-holds-vwbjgpy3ocg24djaqtzmkw.streamlit.app/ -->
-<script type="text/javascript">
-var sc_project=13179868; 
-var sc_invisible=1; 
-var sc_security="d45b5918"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/13179868/0/d45b5918/1/" alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
-
-
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import streamlit_analytics
+
+streamlit_analytics.start_tracking()
 
 st.html('<script defer data-domain="https://moonboard-holds-vwbjgpy3ocg24djaqtzmkw.streamlit.app/" src="https://plausible.io/js/script.js"></script>')
 
@@ -64,3 +51,5 @@ plt.xlabel("Grade")
 plt.ylabel("Frequency (Out of 100)")
 
 st.pyplot(figure)
+
+streamlit_analytics.stop_tracking()
