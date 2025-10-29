@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
-import streamlit as st
 
 
 st.components.v1.html("""
