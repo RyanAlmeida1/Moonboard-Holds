@@ -2,17 +2,21 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
+import streamlit.components.v1 as components
 
 
-<!-- Google tag (gtag.js) -->
+# Google Analytics (GA4) injection
+GA_SNIPPET = """
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-559SFW26XH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-559SFW26XH');
 </script>
+"""
+# Use components.html to inject JS into the page. height=0 keeps it hidden.
+components.html(GA_SNIPPET, height=0)
 
 
 df17 = pd.read_csv("Main_Tool/Data/Analysis_Data2017")
