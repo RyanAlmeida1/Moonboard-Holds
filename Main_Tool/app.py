@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+st.html('<script defer data-domain="https://moonboard-holds-vwbjgpy3ocg24djaqtzmkw.streamlit.app/" src="https://plausible.io/js/script.js"></script>')
+
 df17 = pd.read_csv("Main_Tool/Data/Analysis_Data2017")
 df19 = pd.read_csv("Main_Tool/Data/Analysis_Data2019")
 df16 = pd.read_csv("Main_Tool/Data/Analysis_Data2016")
