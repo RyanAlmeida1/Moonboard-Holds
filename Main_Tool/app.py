@@ -66,4 +66,7 @@ plt.ylabel("Frequency (Out of 100)")
 
 st.pyplot(figure1)
 
+st.write("Raw:", list(year[user_hold]))
+st.write("Norm:", list(yearNorm[user_hold]))
+
 streamlit_analytics.stop_tracking()
