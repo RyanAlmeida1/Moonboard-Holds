@@ -53,7 +53,7 @@ figure = plt.figure()
 plt.bar(grades, yearNorm[user_hold], color="blue")
 plt.title(user_hold)
 plt.xlabel("Grade")
-plt.ylabel("Frequency (Out of 100)")
+plt.ylabel("Frequency")
 
 st.pyplot(figure)
 
@@ -62,7 +62,7 @@ figure1 = plt.figure()
 plt.bar(grades, year[user_hold], color="blue")
 plt.title(user_hold)
 plt.xlabel("Grade")
-plt.ylabel("Frequency (Out of 100)")
+plt.ylabel("Frequency")
 
 st.pyplot(figure1)
 
