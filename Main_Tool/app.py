@@ -14,7 +14,7 @@ df19Norm = pd.read_csv("Main_Tool/Data/Norm_Analysis_Data2019")
 df16Norm = pd.read_csv("Main_Tool/Data/Norm_Analysis_Data2016")
 
 user_set = st.selectbox("Enter Moonboard Set", ['2016','2017','2019'])
-user_hold = st.text_input("Enter Hold (Ex. 'J12'): ") 
+user_hold = (st.text_input("Enter Hold (Ex. 'J12'): ")).upper() 
     
 year = ""
 
