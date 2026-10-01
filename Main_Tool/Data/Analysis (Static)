@@ -78,4 +78,4 @@ for hold in hold_types:
 
 Analysis_Data = pd.DataFrame(frequencies)
 
-Analysis_Data.to_csv("Norm_Analysis_Data")
+Analysis_Data.to_csv("Norm_Analysis_Data", index=False)
